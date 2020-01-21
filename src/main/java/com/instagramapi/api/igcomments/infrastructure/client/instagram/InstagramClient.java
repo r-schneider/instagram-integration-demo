@@ -1,6 +1,6 @@
 package com.instagramapi.api.igcomments.infrastructure.client.instagram;
 
-import com.instagramapi.api.igcomments.infrastructure.client.instagram.response.CommentsResponse;
+import com.instagramapi.api.igcomments.infrastructure.client.instagram.response.MediaCommentsResponse;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.http.MediaType;
@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface InstagramClient {
 
     @GetMapping(value = "{mediaId}/comments", consumes = MediaType.APPLICATION_JSON_VALUE)
-    CommentsResponse getAllComments(@PathVariable String mediaId);
+    MediaCommentsResponse getMediaComments(@PathVariable String mediaId);
 }

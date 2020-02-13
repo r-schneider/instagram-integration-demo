@@ -1,2 +1,2 @@
 # instagram-integration-demo
-Instagram graph API integration example
+Instagram graph API integration with spring boot
